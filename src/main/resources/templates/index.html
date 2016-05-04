@@ -34,7 +34,7 @@
       <div class="large-12 columns">
       	<div class="panel">
           <h4>Environment Information</h4><br/>
-          <p>The Vince server time is <em th:text="${serverTime}"/></p>
+          <p>The current Vince server time is <em th:text="${serverTime}"/></p>
           <p>The application port is <em th:text="${port}"/></p>
           <p th:style="${isCloudEnvironment}? 'display: none;'" >The application is NOT running in a cloud environment</p>
           <p>The instance ID is <em th:text="${vcapApplication} ? ${vcapApplication['instance_id']} : '-NA-'"/>   </p>
